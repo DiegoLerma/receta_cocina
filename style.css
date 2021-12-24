@@ -1,0 +1,262 @@
+:root{
+    --primary-color: #fcdada;
+    --secondary-color: #ffa5a5;
+    --tertiary-color: #5c969e;
+    --quaternary-color: #3d7ea6;
+    --title-size: 4rem;
+    --subtitle-size: 2.2rem;
+    --body-size: 1.8rem;
+    --small-text: 1.4rem;
+    --font-titles: 'Dancing Script', cursive;
+    /* Se establecen variables para algunos de los datos que se repetiran bastante a lo largo del codigo */
+
+}
+
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+/* Se establecen parametros de buena practica al inicio del codigo */
+
+
+html{
+    font-size: 62.5%;
+}
+/* Se establece un font size base de 10px. Esto facilita el calculo de los tamanos rem, al poder calcular la conversion a px con base 10 */
+
+.main-header{
+    background-color: var(--primary-color);
+    padding-bottom: 2px;
+    margin-bottom: 2rem;
+/* Se establecen estilos para el header */
+}
+
+.header-title{
+    position: absolute;
+    margin: 2%;
+    margin-left: 5%;
+    font-family: var(--font-titles);
+    font-size: 6rem;
+    border-radius: 10rem;
+    background-color: peachpuff;
+    border: solid 10px var(--secondary-color);
+    padding: 0rem 1.5rem;
+}
+
+.header-title a{
+    text-decoration: none;
+    color: white;
+    -webkit-text-stroke: 0.0001px black;
+}
+
+
+.header-main-nav{
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 4rem;
+    /* Se establecen estilos para la barra de navegacion */
+}
+
+
+.header-main-nav_ul{
+    margin-top: 10rem;
+    margin-right: 1.5rem;
+    list-style: none;
+    padding-right: 0;
+}
+
+
+.header-main-nav__item{
+    display: inline-block;
+    font-size: var(--body-size);
+    background-color: var(--secondary-color);
+    padding: 1rem 0;
+    width: 15rem;
+    text-align: center;
+    border-radius: 2rem;
+}
+
+
+.header-main-nav__item a{
+    text-decoration: none;
+    color: white;
+
+}
+
+.header-img{
+    width: 25%;
+    margin-left: 2rem;
+    display: inline-block;
+    position: absolute;
+    /* Se establecen estilos para la imagen principal de Doña Ángela y su caption */
+}
+.header-img img{
+    width: 100%;
+    border-radius: 10px;
+}
+
+.header-img figcaption{
+    font-size: var(--small-text);
+}
+
+.main-video{
+    position: fixed;
+    width: 25%;
+    display: inline-block;
+    align-items: flex-end;
+    margin-left: 75%;
+    /* Se establecen estilos para el video insertado a la pagina */
+}
+.main-video video{
+    width: 100%;
+    border-radius: 5px;
+}
+
+.main-article{
+    width: 44%;
+    margin-left: 30%;
+    margin-right: 30%;
+    background-color: wheat;
+    padding: 2%;
+    border-radius: 20px;
+    /* Se establecen estilos para el main, sus contenedores y su contenido */
+}
+
+.main-article figure{
+    width: 40%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.main-article img{
+    width: 100%;
+    margin: 2rem;
+    border-radius: 10px;
+}
+
+.main-article_title{
+    font-family: var(--font-titles);
+    font-size: var(--title-size);
+    color: var(--quaternary-color);
+}
+
+.main-article_subtitle{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: var(--tertiary-color);
+    font-size: var(--subtitle-size);
+    margin-top: 2rem;
+}
+
+.main-article_list{
+    margin-left: 2rem;
+    font-size: var(--body-size);
+    font-family: sans-serif;
+}
+
+.box1{
+    padding-bottom: 5rem;
+    /* Se establecen estilos para los botones de navegacion entre paginas */
+}
+
+.nav-nextanterior{
+    list-style: none;
+}
+
+.nav-nextanterior__item a{
+    text-decoration: none;
+    background-color: var(--secondary-color);
+    color: white;
+    padding: 1rem 2rem;
+    font-size: var(--body-size);
+    border-radius: 10px;
+}
+
+#next_article_button{
+    float: right;
+}
+
+#anterior_article_button{
+    float: left;
+}
+
+.main-footer{
+    width: 100%;
+    background-color: var(--quaternary-color);
+    text-align: center;
+    padding: 2rem;
+    margin-top: 2rem;
+    border-radius: 5px;
+    /* Se establecen estilos para el footer */
+}
+
+.box2{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-end;
+    margin-bottom: 8rem;
+}
+
+.box2-subtitle{
+    font-size: var(--subtitle-size);
+    color: white;
+}
+
+.recommended-article{
+    margin-top: 3rem;
+    width: 15%;
+}
+
+.recommended-article img{
+    width: 100%;
+}
+
+.recommended-article figcaption{
+    font-size: var(--body-size);
+}
+
+.recommended-article a{
+    color: white;
+    text-decoration: none;
+}
+
+.footer-share-subtitle{
+    font-size: var(--subtitle-size);
+    margin: 2rem 0rem;
+    color: white;
+}
+
+.footer-social-media{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+.footer-social-media__item a{
+    text-decoration: none;
+    background-color: var(--tertiary-color);
+    padding: 1rem 2rem;
+    margin: 2rem;
+    color: white;
+    border-radius: 15px;
+    font-size: var(--body-size);
+}
+
+.footer-bottom-text{
+    color: white;
+    margin-top: 7rem;
+    margin-left: 2rem;
+    font-size: var(--small-text);
+}
+.footer-copyright{
+    text-align: left;
+    text-decoration: underline;
+}
+
+
+.project-info{
+    text-align: center;
+    margin: 3rem 0rem;
+    text-decoration: none;
+}

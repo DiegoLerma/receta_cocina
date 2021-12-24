@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<!-- Lenguaje a utilizar para escribir el codigo siguiente -->
+<html lang="es">
+<!-- Lenguaje humano utilizado en el codigo siguiente -->
+<head>
+<!-- Se abre el head del codigo -->
+    <meta charset="UTF-8">
+    <!-- Codificacion de caracteres utilizada en el texto siguiente -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Tamano de la pantalla. content="width=device-width indica que el tamano se ajuste al tamano del dispositivo que abra la pagina (telefono inteligente, tablet, computadora). 
+        initial-scale=1.0 indica que se procurara que el programa tenga escala de 1-->
+    <meta name="description" content="Recetas de cocina de Doña Ángela, Originaria de Rancho Cuin, Michoacán, México"/>
+    <!-- Descripcion de la pagina que aparecera en el buscador al momento de mostrar la pagina debajo de su nombre. Si se omite esta instruccion, en la descripcion se mostrara 
+    un extracto del primer parrafo de texto.-->
+    <meta name="robots" content="index, follow">
+    <!-- Permitir o no permitir el rastreo por los bots de busqueda de la pagina que se esta creando -->
+    <title>Receta Pan de Muerto - De Mi Rancho A Tu Cocina</title>
+    <!-- Titulo de la pagina a visualizarse en la pestana del navegador -->
+    <link rel="stylesheet" href="./style.css">
+    <!-- Enlace a la hoja de estilos CSS -->
+    <link rel="shortcut icon" href="./bake.png">
+    <!-- Icono de la pestaña -->
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+    <!-- Enlace a un tipo de fuente de texto adicional a los estandares que se utilizará a lo largo del codigo -->
+</head>
+<!-- Cierre del head -->
+<body>
+<!-- Se abre el body de la pagina -->
+    <header class="main-header">
+    <!-- Se establece un header para contener logo, titulo y barra de navegacion de la pagina -->
+        <h1 class="header-title"> <a href="">De mi rancho a tu cocina</a></h1>
+        <!-- Se establece un h1 con un enlace de regreso hacia Home en la. Este h1 fungira como logo de la empresa -->
+        <div class="header-main-nav">
+        <!-- Se establece una etiqueta contenedora para la barra de navegacion -->
+            <nav>
+                <ul class="header-main-nav_ul">
+                <!-- Se establece una lista desordenada como base para la barra de navegacion -->
+                    <li class="header-main-nav__item"><a href="">Home</a></li>
+                    <!-- Se establecen los elementos de la barra de navegacion. Cada uno tendra un enlace a su respectiva pagina -->
+                    <li class="header-main-nav__item"><a href="#">Índice recetas</a></li>
+                    <li class="header-main-nav__item" class="main-nav__redes_sociales"><a href="https://www.youtube.com/c/DemiRanchoaTuCocina">Youtube</a></li>
+                    <li class="header-main-nav__item" class="main-nav__redes_sociales"><a href="https://www.facebook.com/DeMiRanchoATuCocinaOficial">Facebook</a></li>
+                    <li class="header-main-nav__item" class="main-nav__redes_sociales"><a href="https://www.instagram.com/de_mi_rancho_a_tu_cocina/?hl=es">Instagram</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <!-- Se cierra el header del articulo -->
+    <main>
+    <!-- Se abre un main para contener la informacion mas importante de la pagina -->
+        <section class="main-video">
+            <video src="./pan_muerto_video.mp4" controls preload="auto"></video>
+        </section>
+        <!-- En esta seccion de main establezco el video original donde se describe la receta. 
+            Este video tendra una posicion fixed en la pagina, por lo que al hacer scroll, el usuario podra continuar viendo el video a la par que el contenido escrito-->
+        <figure class="header-img">
+        <!-- Se establece un contenedor de figura para insertar una imagen -->
+            <source src="./header_large.jpg">
+            <!-- El colocar la misma imagen con distintos tamaños, contribuirá al responsive design de la imagen y mejorará el rendimiento de la página -->
+            <source src="./header_medium.jpg">
+            <img src="./header_small.jpg" alt="Cocinera famosa de cocina tipica mexicana">
+            <figcaption>Recetario de Doña Ángela, <br> Originaria de Rancho Cuin, Michoacán, México</figcaption>
+            <!-- Se coloca un caption de la imagen para ofrecer mayor informacion sobre esta -->
+        </figure>
+        <article class="main-article">
+        <!-- Se establece un article para contener la receta de cocina -->
+            <h1 class="main-article_title">Recetario</h1>
+            <!-- Se establece titulo y subtitulo de la pagina -->
+            <h2 class="main-article_subtitle">Receta de Pan de Muerto</h2>
+
+            <figure class="main-article_img" class="img">
+            <!-- Nuevamente se colocan imagenes en distintas resoluciones para fomentar el responsive design y el rendimiento de la pagina -->
+                <source src="./header_large.jpg">
+                <source src="./header_medium.jpg">
+                <img src="./pan-de-muerto_small.jpg" alt="Pan de muerto tipico mexicano">
+                <!-- En las imagenes se establece la fuente de donde se tomara con src y se describe su contenido con alt, 
+                    esto contribuye ampliamente a la accesibilidad de nuestra pagina web a personas con capacidades diferentes -->
+                <figcaption>Pan de muerto típico mexicano</figcaption>
+                <!-- Se coloca una descripcion del contenido de la imagen -->
+            </figure>
+            <h2 class="main-article_subtitle">Ingredientes</h2>
+            <!-- Se establece un nuevo subtitulo dentro del mismo articulo -->
+            <ul class="main-article_list">
+            <!-- Se establecen los ingredientes de la receta en una lista desordenada, al ser todos igual de importantes para la receta y no
+            llevar un orden jerarquico o secuencial -->
+                <li>1½ taza de azúcar</li>
+                <!-- Se listan los elementos con la etiqueta List Item (li) -->
+                <li>1½ taza de margarina</li>
+                <li>8 huevos</li>
+                <li>1 taza de mantequilla</li>
+                <li>3 cucharada de levadura fresca</li>
+                <li>3 cucharadas de naranja rayada</li>
+                <li>¾ de taza de jugo de naranja</li>
+                <li>1½ kg de harina</li>
+                <li>2 cucharadas de vainilla</li>
+                <li>Sal (3 pizcas)</li>
+            </ul>
+            <figure class="img">
+            <!-- Se establece una etiqueta figure para contener la imagen 
+            En todas estas imagenes no se colocara alt o varias fuentes por motivos de tiempo, pero ya se ha demostrado que en un proyecto serio se utilizarán
+        estos recursos de forma íntegra-->
+                <img src="./17.jpg" alt="">
+            </figure>
+            <h2 class="main-article_subtitle">Procedimiento</h2>
+            <!-- Se establece un tercer subtitulo para el articulo -->
+            <ol class="main-article_list">
+            <!-- Se indica una lista ordenada para el procedimiento, puesto que cada uno de los pasos de la receta sigue un orden secuencial -->
+                <li>Colocar toda la harina en un recipiente grande.</li>
+                <figure class="img">
+                    <img src="./1.jpg" alt="">
+                </figure>
+                <li>Colocar en el centro del recipiente, sobre la harina: Mantequilla, margarina, levadura, 
+                    jugo de naranja, azúcar, vainilla, sal y huevos.</li>
+                <figure class="img">
+                    <img src="./2.jpg" alt="">
+                </figure>
+                <li>Amasar todos los ingredientes hasta conseguir una masa homogenea y menos pegajosa que al inicio.</li>
+                <figure class="img">
+                    <img src="./3.jpg" alt="">
+                </figure>
+                <li>Colocar aceite en una charola grande y colocar la masa sobre la misma charola. Aceitar levemente la masa.</li>
+                <figure class="img">
+                    <img src="./6.jpg" alt="">
+                </figure>
+                <li>Dejar reposar por 90 minutos cubierta con tela.</li>
+                <figure class="img">
+                    <img src="./7.jpg" alt="">
+                </figure>
+                <li>Colocar manteca vegetal sobre otra charola grande.</li>
+                <li>Moldear trozos de masa con las manos para hacer bolitas del tamaño deseado.</li>
+                <figure class="img">
+                    <img src="./4.jpg" alt="">
+                </figure>
+                <li>Para los huesos que van encima, tomar un trozo pequeño de masa y amasar con la mano extendida haciendo presión leve.</li>
+                <figure class="img">
+                    <img src="./5.jpg" alt="">
+                </figure>
+                <li>Colocar el trozo de masa resultante sobre la bolita de masa hecha previamente para simular los huesos típicos del pan de muerto como se muestra en la imagen.</li>
+                <figure class="img">
+                    <img src="./8.jpg" alt="">
+                </figure>
+                <li>Hacer presión ligera con el dedo índice en el centro del pan y colocar en el hueco generado una bolita más de masa para obtener este resultado.</li>
+                <figure class="img">
+                    <img src="./10.jpg" alt="">
+                </figure>
+                <li>Repetir el proceso con la masa sobrante.</li>
+                <li>Dejar reposar por una hora más cubiertos con tela.</li>
+                <figure class="img">
+                    <img src="./11.jpg" alt="">
+                </figure>
+                <li>Meter al horno a una temperatura de 170°C(340°F) y esperar 20-30 min.</li>
+                <figure class="img">
+                    <img src="./12.jpg" alt="">
+                </figure>
+                <figure class="img">
+                    <img src="./13.jpg" alt="">
+                </figure>
+                <li>Verter sobre el pan mantequilla derretida y untar uniformemente.</li>
+                <figure class="img">
+                    <img src="./14.jpg" alt="">
+                </figure>
+                <li>Espolvorear azúcar sobre la toda la parte superior del pan.</li>
+                <figure class="img">
+                    <img src="./15.jpg" alt="">
+                </figure>
+                <figure class="img">
+                    <img src="./16.jpg" alt="">
+                </figure>
+            </ol>
+            <div class="box1">
+            <!-- Se establece una etiqueta contenedora para establecer los botones que nos permitiran navegar entre las distintas recetas que creemos -->
+                <ul class="nav-nextanterior">
+                    <!-- Estos elementos se tratan como lista -->
+                    <li class="nav-nextanterior__item" id="anterior_article_button"><a href="#">← Receta Anterior</a></li>
+                    <!-- Dentro del item de lista, se anida una etiqueta a, para establecer el enlace hacia la pagina siguiente y anterior -->
+                    <li class="nav-nextanterior__item" id="next_article_button"><a href="#">Receta Siguiente →</a></li>
+                </ul>
+            </div>
+        </article>
+    </main>
+    <footer class="main-footer">
+    <!-- Se establece el footer de la pagina -->
+        <h2 class="box2-subtitle">También te gustará</h2>
+        <div class="box2">
+        <!-- Se escribe un titulo y se establece una etiqueta contenedora para colocar recetas recomendadas -->
+            <figure class="recommended-article">
+            <!-- Nuevamente se establece una etiqueta figure para contener imagen y caption. Estos caption tendran entonces el enlace a la receta correspondiente -->
+                <img src="./corundas.jpg" alt="Corundas michoacanas">
+                <figcaption><a href="https://www.youtube.com/watch?v=u9wdPjzGnyQ">Corundas michoacanas</a></figcaption>
+                <!-- Se utiliza un enlace absoluto -->
+            </figure>
+            <figure class="recommended-article">
+                <img src="./mole.jpg" alt="Mole de rancho">
+                <figcaption><a href="/watch?v=BMCoJCGFmPE&t=4s">Mole de rancho</a></figcaption>
+                <!-- Se utiliza un enlace relativo -->
+            </figure>
+            <figure class="recommended-article">
+                <img src="./quesadillas.jpg" alt="Quesadillas de comal">
+                <figcaption><a href="/watch?v=eLdmbLH_Kxs">Quesadillas de comal</a></figcaption>
+            </figure>
+        </div>
+        <h2 class="footer-share-subtitle">Si te gustó nuestro trabajo ¡Comparte!</h2>
+        <!-- Se establece texto que titulara los enlaces a redes sociales -->
+        <div class="footer-box">
+            <ul class="footer-social-media">
+            <!-- Estos enlaces se trataran como una lista desordenada -->
+                <li class="footer-social-media__item"><a href="https://www.youtube.com/c/DemiRanchoaTuCocina">YouTube</a></li>
+                <!-- Todos estos enlaces, al ser de diferentes dominios, deberan llevar enlaces absolutos -->
+                <li class="footer-social-media__item"><a href="https://www.facebook.com/DeMiRanchoATuCocinaOficial">Facebook</a></li>
+                <li class="footer-social-media__item"><a href="https://www.instagram.com/de_mi_rancho_a_tu_cocina/?hl=es">Instagram</a></li>
+            </ul>
+        </div>
+        <div class="footer-bottom-text">
+        <!-- Se establece un apartado final para establecer datos de copyright e informacion del proyecto al que pertenece la pagina web -->
+            <p class="footer-copyright">Esta pagina fue realizada con fines educativos. Todos los derechos pertenecen a sus autores originales.</p>
+            <p class="project-info">Proyecto realizado por Diego Lerma en 2020 para la materia Programación Web.</p>
+        </div>
+    </footer>
+</body>
+</html>
